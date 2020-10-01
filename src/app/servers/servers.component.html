@@ -9,7 +9,7 @@ class="form-control"
 [disabled]="this.serverName ? false : true"
 (click)="onCreateServer()"
 class="btn btn-primary">Add Server</button>
-<p>{{ serverCreationStatus }}</p>
+<p *ngIf="">{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
