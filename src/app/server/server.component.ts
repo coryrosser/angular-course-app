@@ -9,6 +9,11 @@ export class ServerComponent {
   serverId: number = 10;
   serverStatus: string = 'offline'
 
+  constructor() {
+    console.log(Math.random())
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+  }
+
   getServerStatus() {
     return this.serverStatus
   }
