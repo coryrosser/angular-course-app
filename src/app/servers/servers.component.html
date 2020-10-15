@@ -11,6 +11,6 @@ class="form-control"
 class="btn btn-primary">Add Server</button>
 <p *ngIf="serverCreated; else noServer">{{ serverCreationStatus }}</p>
 <ng-template #noServer> 
-  <p>No server was created </p>
+  <p>No server was created yet </p>
 </ng-template>
 <app-server *ngFor="let server of servers; let i = index"></app-server>
